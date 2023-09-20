@@ -1,3 +1,3 @@
-/Users/makar/CLionProjects/Testing/cmake-build-debug/CMakeFiles/Testing.dir
-/Users/makar/CLionProjects/Testing/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/makar/CLionProjects/Testing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/makar/CLionProjects/vscpp/cmake-build-debug/CMakeFiles/Testing.dir
+/Users/makar/CLionProjects/vscpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/makar/CLionProjects/vscpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

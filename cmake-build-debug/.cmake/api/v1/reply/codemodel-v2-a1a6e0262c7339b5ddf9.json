@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/makar/CLionProjects/Testing/cmake-build-debug",
-		"source" : "/Users/makar/CLionProjects/Testing"
+		"build" : "/Users/makar/CLionProjects/vscpp/cmake-build-debug",
+		"source" : "/Users/makar/CLionProjects/vscpp"
 	},
 	"version" : 
 	{
