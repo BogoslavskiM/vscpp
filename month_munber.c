@@ -3,7 +3,7 @@
 
 
 int main() {
-    int month_number;
+    int month_number = 0;
 
     printf("enter month_number\n");
     scanf("%d", &month_number);
@@ -47,6 +47,7 @@ int main() {
             break;
         default:
             printf("no found month by month number %d", month_number);
+            return 0;
     }
     printf("\n");
 
@@ -65,6 +66,7 @@ int main() {
             break;
         default:
             printf("no found season by month number %d", month_number);
+
     }
     printf("\n");
 
@@ -85,5 +87,37 @@ int main() {
             printf("no found quarter by month number %d", month_number);
     }
     printf("\n");
-    return 0;
+
+    // написал такой иф, чтобы свернуть участок с кодом
+    if (1) {
+        if (month_number == 1)
+            printf("January");
+        else if (month_number == 2)
+            printf("February");
+        else if (month_number == 3)
+            printf("March");
+        else if (month_number == 4)
+            printf("April");
+        else if (month_number == 5)
+            printf("May");
+        else if (month_number == 6)
+            printf("June");
+        else if (month_number == 7)
+            printf("July");
+        else if (month_number == 8)
+            printf("August");
+        else if (month_number == 9)
+            printf("September");
+        else if (month_number == 10)
+            printf("October");
+        else if (month_number == 11)
+            printf("November");
+        else if (month_number == 12)
+            printf("December");
+        else
+            printf("no found month by month number %d", month_number);
+        /*эта строка, и аналогичная строка в свитчах не будет выполнена никогда, поскольку наверху есть return 0 в таких случаях */
+        printf("\n");
+    }
+
 }
