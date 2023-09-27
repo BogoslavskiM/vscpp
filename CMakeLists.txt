@@ -3,5 +3,5 @@ project(Testing)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Testing main.cpp
-        hello_fun.cpp)
+add_executable(Testing my_files/main.cpp
+        my_files/hello_fun.cpp)
