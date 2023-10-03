@@ -4,8 +4,8 @@
 
 // возвращает -1, если точки на одной прямой, 0 - если поворот против часовой стрелки, 1 - если по часовой.
 int is_clock_turn(float x1, float y1, float x2, float y2, float x3, float y3) {
-    float k, b, eps;
-    int higher, lower;
+    float k, b, eps, fx3;
+    int is_higher;
     eps = 1e-14;
     // если первые две точки на одной горизонтальной прямой
     if (fabsf(y1 - y2) < eps) {
@@ -26,19 +26,21 @@ int is_clock_turn(float x1, float y1, float x2, float y2, float x3, float y3) {
         else
             return 1;
     }
-
     // первые две точки на прямой общего положения
-    k = (x1 - x2) / (y1 - y2);
+    k = (y1 - y2) / (x1 - x2);
     b = y1 - k * x1;
-    higher = (k * x3 + b < y3);
-    lower = (k * x3 + b > y3);
+    fx3 = k * x3 + b;
+    printf("f(x3) = %f * %f + %f = %f; y3=%f\n", k, x3, b, fx3, y3);
 
-    if ((higher && x1 > x2) || (lower && x1 < x2))
-        return 1;
-    else if (higher || lower)
-        return 0;
-    else
+    if (fabsf(fx3 - y3) < eps)
         return -1;
+
+    is_higher = k * x3 + b < y3;
+
+    if ((is_higher && x1 > x2) || (!is_higher && x1 < x2))
+        return 1;
+    else
+        return 0;
 }
 
 
@@ -47,11 +49,9 @@ int main(){
     float a, b, c, tmp;
     int v1, v2, v3, v_equal;
 
+    // ввод щанных о вершинах
     printf("введите координаты треугольника через пробел - x1 y1 x2 y2 x3 y3 - всего 6 чисел, например:\n1 1 2 2 1 2\n");
     scanf("%F %F %F %F %F %F", &x1, &y1, &x2, &y2, &x3, &y3);
-
-    printf("введите координаты точки - x y - всего 2 числа, например:\n1 1\n");
-    scanf("%F %F", &x, &y);
 
     // нахождение длин сторон для проверки на треугольник
     a = sqrtf(powf(x1 - x2, 2) + powf(y1 - y2, 2));
@@ -71,6 +71,10 @@ int main(){
         printf("this is not a triangle\n");
         return 0; // в случае, если это не треугольник программа завершается
     }
+
+    // ввод данных о точке
+    printf("введите координаты точки - x y - всего 2 числа, например:\n1 1\n");
+    scanf("%F %F", &x, &y);
 
     // берем данные о стороне поворота для заданой точке и двух вершин, причем аккуратно с порядком передачи переменных
     v1 = is_clock_turn(x1, y1, x2, y2, x, y);
