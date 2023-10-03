@@ -2,25 +2,25 @@
 #include <stdlib.h>
 #include <math.h>
 
-int is_right_turn(int x1, int y1, int x2, int y2, int x3, int y3) {
+int is_clock_turn(int x1, int y1, int x2, int y2, int x3, int y3) {
     float k, b;
     int higher, lower;
     if (abs(y1 - y2) < 0.00000001) {
         if (x1 > x2 == y3 > y2)
-            return 0;
-        else if (abs(y3 - y2) < 0.00000001)
             return 1;
-        else
+        else if (abs(y3 - y2) < 0.00000001)
             return -1;
+        else
+            return 0;
     }
 
     if (abs(x1 - x2) < 0.00000001){
         if ((y1 > y2) == (x3 > x2))
-            return 1;
-        else if (abs(x3 - x2) < 0.00000001)
             return 0;
-        else
+        else if (abs(x3 - x2) < 0.00000001)
             return -1;
+        else
+            return 1;
     }
 
     k = (x1 - x2) / (y1 - y2);
@@ -64,15 +64,15 @@ int main(){
         return 0;
     }
 
-    v1 = is_right_turn(x1, y1, x2, y2, x, y);
-    v2 = is_right_turn(x2, y2, x3, y3, x, y);
-    v3 = is_right_turn(x3, y3, x1, y1, x, y);
+    v1 = is_clock_turn(x1, y1, x2, y2, x, y);
+    v2 = is_clock_turn(x2, y2, x3, y3, x, y);
+    v3 = is_clock_turn(x3, y3, x1, y1, x, y);
 
     if (v1 > v2) { tmp = v1; v1 = v2; v2 = tmp; }
     if (v1 > v3) { tmp = v1; v1 = v3; v3 = tmp; }
     if (v2 > v3) { tmp = v2; v2 = v3; v3 = tmp; }
 
-    v_equal = v1 == v2 == v3;
+    v_equal = v1 == v2 && v2 == v3;
 
     if (v_equal && v1 == -1)
         printf("all points are same");
