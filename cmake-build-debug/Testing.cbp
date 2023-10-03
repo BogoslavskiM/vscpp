@@ -80,10 +80,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/makar/CLionProjects/vscpp/hello_fun.cpp">
+		<Unit filename="/Users/makar/CLionProjects/vscpp/my_files/hello_fun.cpp">
 			<Option target="Testing"/>
 		</Unit>
-		<Unit filename="/Users/makar/CLionProjects/vscpp/main.cpp">
+		<Unit filename="/Users/makar/CLionProjects/vscpp/my_files/main.cpp">
 			<Option target="Testing"/>
 		</Unit>
 		<Unit filename="/Users/makar/CLionProjects/vscpp/CMakeLists.txt">

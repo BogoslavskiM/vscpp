@@ -69,44 +69,44 @@ include CMakeFiles/Testing.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Testing.dir/flags.make
 
-CMakeFiles/Testing.dir/main.cpp.o: CMakeFiles/Testing.dir/flags.make
-CMakeFiles/Testing.dir/main.cpp.o: /Users/makar/CLionProjects/vscpp/main.cpp
-CMakeFiles/Testing.dir/main.cpp.o: CMakeFiles/Testing.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/makar/CLionProjects/vscpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Testing.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Testing.dir/main.cpp.o -MF CMakeFiles/Testing.dir/main.cpp.o.d -o CMakeFiles/Testing.dir/main.cpp.o -c /Users/makar/CLionProjects/vscpp/main.cpp
+CMakeFiles/Testing.dir/my_files/main.cpp.o: CMakeFiles/Testing.dir/flags.make
+CMakeFiles/Testing.dir/my_files/main.cpp.o: /Users/makar/CLionProjects/vscpp/my_files/main.cpp
+CMakeFiles/Testing.dir/my_files/main.cpp.o: CMakeFiles/Testing.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/makar/CLionProjects/vscpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Testing.dir/my_files/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Testing.dir/my_files/main.cpp.o -MF CMakeFiles/Testing.dir/my_files/main.cpp.o.d -o CMakeFiles/Testing.dir/my_files/main.cpp.o -c /Users/makar/CLionProjects/vscpp/my_files/main.cpp
 
-CMakeFiles/Testing.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Testing.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/makar/CLionProjects/vscpp/main.cpp > CMakeFiles/Testing.dir/main.cpp.i
+CMakeFiles/Testing.dir/my_files/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Testing.dir/my_files/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/makar/CLionProjects/vscpp/my_files/main.cpp > CMakeFiles/Testing.dir/my_files/main.cpp.i
 
-CMakeFiles/Testing.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Testing.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/makar/CLionProjects/vscpp/main.cpp -o CMakeFiles/Testing.dir/main.cpp.s
+CMakeFiles/Testing.dir/my_files/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Testing.dir/my_files/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/makar/CLionProjects/vscpp/my_files/main.cpp -o CMakeFiles/Testing.dir/my_files/main.cpp.s
 
-CMakeFiles/Testing.dir/hello_fun.cpp.o: CMakeFiles/Testing.dir/flags.make
-CMakeFiles/Testing.dir/hello_fun.cpp.o: /Users/makar/CLionProjects/vscpp/hello_fun.cpp
-CMakeFiles/Testing.dir/hello_fun.cpp.o: CMakeFiles/Testing.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/makar/CLionProjects/vscpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Testing.dir/hello_fun.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Testing.dir/hello_fun.cpp.o -MF CMakeFiles/Testing.dir/hello_fun.cpp.o.d -o CMakeFiles/Testing.dir/hello_fun.cpp.o -c /Users/makar/CLionProjects/vscpp/hello_fun.cpp
+CMakeFiles/Testing.dir/my_files/hello_fun.cpp.o: CMakeFiles/Testing.dir/flags.make
+CMakeFiles/Testing.dir/my_files/hello_fun.cpp.o: /Users/makar/CLionProjects/vscpp/my_files/hello_fun.cpp
+CMakeFiles/Testing.dir/my_files/hello_fun.cpp.o: CMakeFiles/Testing.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/makar/CLionProjects/vscpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Testing.dir/my_files/hello_fun.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Testing.dir/my_files/hello_fun.cpp.o -MF CMakeFiles/Testing.dir/my_files/hello_fun.cpp.o.d -o CMakeFiles/Testing.dir/my_files/hello_fun.cpp.o -c /Users/makar/CLionProjects/vscpp/my_files/hello_fun.cpp
 
-CMakeFiles/Testing.dir/hello_fun.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Testing.dir/hello_fun.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/makar/CLionProjects/vscpp/hello_fun.cpp > CMakeFiles/Testing.dir/hello_fun.cpp.i
+CMakeFiles/Testing.dir/my_files/hello_fun.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Testing.dir/my_files/hello_fun.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/makar/CLionProjects/vscpp/my_files/hello_fun.cpp > CMakeFiles/Testing.dir/my_files/hello_fun.cpp.i
 
-CMakeFiles/Testing.dir/hello_fun.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Testing.dir/hello_fun.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/makar/CLionProjects/vscpp/hello_fun.cpp -o CMakeFiles/Testing.dir/hello_fun.cpp.s
+CMakeFiles/Testing.dir/my_files/hello_fun.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Testing.dir/my_files/hello_fun.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/makar/CLionProjects/vscpp/my_files/hello_fun.cpp -o CMakeFiles/Testing.dir/my_files/hello_fun.cpp.s
 
 # Object files for target Testing
 Testing_OBJECTS = \
-"CMakeFiles/Testing.dir/main.cpp.o" \
-"CMakeFiles/Testing.dir/hello_fun.cpp.o"
+"CMakeFiles/Testing.dir/my_files/main.cpp.o" \
+"CMakeFiles/Testing.dir/my_files/hello_fun.cpp.o"
 
 # External object files for target Testing
 Testing_EXTERNAL_OBJECTS =
 
-Testing: CMakeFiles/Testing.dir/main.cpp.o
-Testing: CMakeFiles/Testing.dir/hello_fun.cpp.o
+Testing: CMakeFiles/Testing.dir/my_files/main.cpp.o
+Testing: CMakeFiles/Testing.dir/my_files/hello_fun.cpp.o
 Testing: CMakeFiles/Testing.dir/build.make
 Testing: CMakeFiles/Testing.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/makar/CLionProjects/vscpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Testing"

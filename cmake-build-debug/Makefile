@@ -129,53 +129,53 @@ Testing/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/build
 .PHONY : Testing/fast
 
-hello_fun.o: hello_fun.cpp.o
-.PHONY : hello_fun.o
+my_files/hello_fun.o: my_files/hello_fun.cpp.o
+.PHONY : my_files/hello_fun.o
 
 # target to build an object file
-hello_fun.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/hello_fun.cpp.o
-.PHONY : hello_fun.cpp.o
+my_files/hello_fun.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/my_files/hello_fun.cpp.o
+.PHONY : my_files/hello_fun.cpp.o
 
-hello_fun.i: hello_fun.cpp.i
-.PHONY : hello_fun.i
+my_files/hello_fun.i: my_files/hello_fun.cpp.i
+.PHONY : my_files/hello_fun.i
 
 # target to preprocess a source file
-hello_fun.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/hello_fun.cpp.i
-.PHONY : hello_fun.cpp.i
+my_files/hello_fun.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/my_files/hello_fun.cpp.i
+.PHONY : my_files/hello_fun.cpp.i
 
-hello_fun.s: hello_fun.cpp.s
-.PHONY : hello_fun.s
+my_files/hello_fun.s: my_files/hello_fun.cpp.s
+.PHONY : my_files/hello_fun.s
 
 # target to generate assembly for a file
-hello_fun.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/hello_fun.cpp.s
-.PHONY : hello_fun.cpp.s
+my_files/hello_fun.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/my_files/hello_fun.cpp.s
+.PHONY : my_files/hello_fun.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+my_files/main.o: my_files/main.cpp.o
+.PHONY : my_files/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/main.cpp.o
-.PHONY : main.cpp.o
+my_files/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/my_files/main.cpp.o
+.PHONY : my_files/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+my_files/main.i: my_files/main.cpp.i
+.PHONY : my_files/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/main.cpp.i
-.PHONY : main.cpp.i
+my_files/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/my_files/main.cpp.i
+.PHONY : my_files/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+my_files/main.s: my_files/main.cpp.s
+.PHONY : my_files/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/main.cpp.s
-.PHONY : main.cpp.s
+my_files/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Testing.dir/build.make CMakeFiles/Testing.dir/my_files/main.cpp.s
+.PHONY : my_files/main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Testing"
-	@echo "... hello_fun.o"
-	@echo "... hello_fun.i"
-	@echo "... hello_fun.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... my_files/hello_fun.o"
+	@echo "... my_files/hello_fun.i"
+	@echo "... my_files/hello_fun.s"
+	@echo "... my_files/main.o"
+	@echo "... my_files/main.i"
+	@echo "... my_files/main.s"
 .PHONY : help
 
 
