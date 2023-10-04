@@ -17,7 +17,7 @@ int main() {
             return 0;
         }
     }
-    else{
+    else {
         printf("on line");
         return 0;
     }
