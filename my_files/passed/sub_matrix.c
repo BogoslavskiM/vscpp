@@ -36,24 +36,28 @@ int main(){
     int xa, ya;
     printf("A(x, y):\n");
     scanf("%d %d", &xa, &ya);
-  
+
     int xb, yb;
     printf("B(x, y):\n");
     scanf("%d %d", &xb, &yb);
 
-    xa = delimit_value(xa, 1, n);
-    ya = delimit_value(ya, 1, m);
 
-    xb = delimit_value(xb, 1, n);
-    yb = delimit_value(yb, 1, m);
-  
+    
+
+    xa = delimit_value(xa, 1, m);
+    ya = delimit_value(ya, 1, n);
+
+    xb = delimit_value(xb, 1, m);
+    yb = delimit_value(yb, 1, n);
+
+
     xa --;
     ya --;
     xb --;
     yb --;
-
+    
     printf("\n");
-  
+
     int res_matrix[xb - xa + 1][yb - ya + 1];
 
     for (int j = 0; j < xb - xa + 1; j++){
@@ -63,6 +67,6 @@ int main(){
         }
         printf("\n");
     }
-  
+
     return 0;
 }
